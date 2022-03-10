@@ -7,8 +7,7 @@ LABEL maintainer=gvasudevan@google.com
 LABEL tensorflow_serving_github_branchtag=${TF_SERVING_VERSION_GIT_BRANCH}
 LABEL tensorflow_serving_github_commit=${TF_SERVING_VERSION_GIT_COMMIT}
 
-#ARG TF_SERVING_BUILD_OPTIONS="--config=release"
-ARG TF_SERVING_BUILD_OPTIONS="--config=nativeopt"
+ARG TF_SERVING_BUILD_OPTIONS="--config=release"
 ARG TF_SERVING_BAZEL_OPTIONS=""
 
 RUN yum -y update && yum -y install \
